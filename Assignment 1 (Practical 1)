@@ -24,4 +24,5 @@ if pass_status:
     elif percentage >= 40:
         print("Grade: Third Division")
 else:
+
     print("Student Failed")
