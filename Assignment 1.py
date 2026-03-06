@@ -1,0 +1,27 @@
+marks = []
+total = 0
+pass_status = True
+
+for i in range(5):
+    m = int(input(f"Enter marks for subject {i+1}: "))
+    marks.append(m)
+    total += m
+    if m < 40:
+        pass_status = False
+
+percentage = total / 5
+
+if pass_status:
+    print("Student Passed")
+    print("Percentage:", percentage)
+
+    if percentage >= 75:
+        print("Grade: Distinction")
+    elif percentage >= 60:
+        print("Grade: First Division")
+    elif percentage >= 50:
+        print("Grade: Second Division")
+    elif percentage >= 40:
+        print("Grade: Third Division")
+else:
+    print("Student Failed")
